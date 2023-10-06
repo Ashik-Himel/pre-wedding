@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .btn-primary {
+    @apply text-base font-medium text-white normal-case h-auto min-h-[40px] rounded-md;
+  }
+}

@@ -12,10 +12,25 @@ export default {
         '2xl': '6rem'
       }
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "poppins": "'Poppins', sans-serif"
+      },
+      colors: {
+        "text-color": "#272727",
+        "para-color": "rgba(39, 39, 39, 0.8)"
+      }
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['light']
+    themes: [
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["[data-theme=light]"],
+          "primary": "#E55473"
+        },
+      },
+    ]
   }
 }
