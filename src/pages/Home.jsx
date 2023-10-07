@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Services from "../components/Services";
+import LatestEvents from "../components/LatestEvents";
+import Contact from "../components/Contact";
 
 const Home = () => {
   return (
@@ -8,7 +10,9 @@ const Home = () => {
         <title>PreWedding - Your Wedding Planner</title>
       </Helmet>
       
+      <LatestEvents />
       <Services />
+      <Contact />
     </main>
   );
 };

@@ -1,8 +1,8 @@
 const Services = () => {
   return (
-    <section>
+    <section className="mt-10" id="services">
       <div className="container">
-        <h2>Services</h2>
+        <h2 className="text-center text-3xl font-semibold mb-4">Our <span className="text-primary">Services</span></h2>
       </div>
     </section>
   );

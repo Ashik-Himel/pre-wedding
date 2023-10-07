@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-4;
+  }
+}
+
 @layer utilities {
   .btn {
     @apply text-base font-medium normal-case h-auto min-h-[40px] rounded-md;
@@ -10,6 +16,6 @@
     @apply text-white;
   }
   .btn-outline {
-    @apply border-2 border-white text-white;
+    @apply border-2 border-white text-white hover:bg-primary hover:border-primary;
   }
 }
