@@ -3,7 +3,13 @@
 @tailwind utilities;
 
 @layer utilities {
+  .btn {
+    @apply text-base font-medium normal-case h-auto min-h-[40px] rounded-md;
+  }
   .btn-primary {
-    @apply text-base font-medium text-white normal-case h-auto min-h-[40px] rounded-md;
+    @apply text-white;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white;
   }
 }
