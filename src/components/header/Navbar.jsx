@@ -50,7 +50,7 @@ const Navbar = () => {
             <p className="font-medium hidden lg:block">{user?.displayName?.split(' ')[0]}</p>
           </div>
           {
-            profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md text-center w-[300px] absolute top-[calc(100%+15px)] right-0 z-10 shadow-2xl">
+            profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md text-center w-[320px] absolute top-[calc(100%+15px)] right-0 z-10 shadow-2xl">
               <span className="block w-4 h-4 bg-white rotate-45 absolute -top-2 right-3 lg:right-2"></span>
               <img src={user?.photoURL} alt="User's Photo" className="w-14 mx-auto rounded-full mb-2" />
               <p className="text-[18px] font-medium">{user?.displayName}</p>

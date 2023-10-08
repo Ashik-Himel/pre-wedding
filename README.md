@@ -1,5 +1,5 @@
 # Project Details
-### **Project Name**: PreWedding <br>
+### **Name**: PreWedding <br>
 **Live Link**: https://pre-wedding-1.web.app/
 <br><br>
 # Project Features
@@ -8,3 +8,4 @@
 * User authentication with email and password.
 * User authentication with google account.
 * Private routes added. They cannot be accessed without login.
+* React hot toast used to show alert.
