@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "All in One Package",
+    "image": "https://i.ibb.co/vq1sTCx/all-in-one.jpg",
+    "description": "Our 'All in One Wedding Planning' package is the ultimate choice for couples seeking a stress-free planning experience. We handle every aspect of your wedding, from venue selection to vendor coordination, budget management to guest list organization. With us, your dream wedding becomes a reality, and you can relax, knowing that every detail is taken care of.",
+    "price": "250K"
+  },
+  {
+    "id": 2,
+    "title": "Customized Packages",
+    "image": "https://i.ibb.co/BscfNHC/customized.jpg",
+    "description": "Tailored to your unique vision and needs, our 'Customized Wedding Packages' allow you to choose the specific services you require. Whether it's venue selection, budget management, or guest list organization, we create a package that aligns perfectly with your preferences and budget.",
+    "price": "0-250K"
+  },
+  {
+    "id": 3,
+    "title": "Venue Selection",
+    "image": "https://i.ibb.co/HBYzD1c/venue.jpg",
+    "description": "Choosing the right venue sets the tone for your special day. Our experts will help you find the perfect location that matches your style and budget. We'll handle negotiations and secure your dream venue, ensuring a seamless and memorable experience.",
+    "price": "30K-50K"
+  },
+  {
+    "id": 4,
+    "title": "Budget Management",
+    "image": "https://i.ibb.co/Tk98mY5/budget.jpg",
+    "description": "Managing your wedding budget can be challenging. Our budget management service helps you stay on track. We'll assist in allocating funds, finding cost-saving opportunities, and ensuring you make the most of your budget.",
+    "price": "10K"
+  },
+  {
+    "id": 5,
+    "title": "Guest Management",
+    "image": "https://i.ibb.co/YfVxLK7/guest-list.jpg",
+    "description": "Creating and organizing your guest list can be a daunting task. Our experts will handle the guest list management for you. From invitations to RSVP tracking, we'll ensure your guest list is flawlessly managed.",
+    "price": "10K"
+  },
+  {
+    "id": 6,
+    "title": "Event Timeline Creation",
+    "image": "https://i.ibb.co/GQm7JHF/timeline.jpg",
+    "description": "A well-structured timeline is key to a successful wedding day. We'll create a detailed event timeline that ensures everything runs smoothly. From ceremony to reception, every moment will be perfectly orchestrated.",
+    "price": "10K"
+  },
+  {
+    "id": 7,
+    "title": "Reception Management",
+    "image": "https://i.ibb.co/0jYg4kQ/reciption.jpg",
+    "description": "Your wedding reception should be a celebration to remember. Our reception management service ensures everything is in place, from seating arg to entertainment. Relax and enjoy while we manage the reception for you.",
+    "price": "40K-60K"
+  },
+  {
+    "id": 8,
+    "title": "Registry Management",
+    "image": "https://i.ibb.co/QdFPBQh/registry.jpg",
+    "description": "Creating and managing your wedding registry has never been easier. We'll help you curate the perfect registry that reflects your preferences. Guests can easily access and contribute to your registry, making gift management a breeze.",
+    "price": "20K"
+  }
+]

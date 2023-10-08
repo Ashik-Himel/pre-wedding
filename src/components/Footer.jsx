@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       {
-        pathname === '/login' || pathname === '/register' ? "" : <footer className="bg-[#111010] text-white">
+        pathname === '/login' || pathname === '/register' ? "" : <footer className="bg-[#111010] text-white mt-8">
           <div className="container">
             {/* Main Footer */}
             <div className="py-12 flex flex-col sm:flex-row gap-8 justify-between [&>*]:flex-1">
@@ -49,7 +49,7 @@ const Footer = () => {
             <hr />
 
             {/* Bottom Footer */}
-            <div className="py-8 text-center">
+            <div className="py-6 text-center">
               <p className="leading-8">Copyright &copy; {new Date().getFullYear()} PreWedding - All rights reserved. Developed by <a className="font-semibold" href="https://www.facebook.com/ashikujjaman.himel" target="_blank" rel="noreferrer">Ashik-Himel</a>.</p>
             </div>
           </div>

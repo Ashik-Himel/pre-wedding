@@ -8,13 +8,12 @@ const EventCard = ({event}) => {
     <div className="border-2 border-primary rounded [box-shadow:2px_2px_30px_rgba(229,84,115,0.3)]">
       <img src={thumbnail} alt="Event Thumbnail" className="aspect-[4/3] object-cover object-center" />
       <div className="p-4">
-        <h2 className="text-xl font-medium">{title}</h2>
-        <span className="text-para-color block mb-2">{location}</span>
-        <div className="flex justify-between items-center text-para-color mb-5">
+        <div className="flex justify-between items-center text-para-color mb-4">
           <span>Date: {format(new Date(date), "dd/MM/yyyy")}</span>
           <span>Budget: {budget}</span>
         </div>
-        <button className="btn btn-primary">View Details</button>
+        <h2 className="text-2xl font-medium">{title}</h2>
+        <span className="text-para-color block">{location}</span>
       </div>
     </div>
   );
