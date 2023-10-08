@@ -1,9 +1,14 @@
 import { Helmet } from "react-helmet-async";
-import { useLoaderData } from "react-router-dom";
 import DirectoryCard from "../../components/DirectoryCard";
+import { useEffect, useState } from "react";
 
 const VendorDirectory = () => {
-  const vendors = useLoaderData();
+  const [vendors, setVendors] = useState([]);
+  useEffect(() => {
+    fetch('/data/vendors.json')
+      .then(res => res.json())
+      .then(data => setVendors(data))
+  }, []);
 
   return (
     <main className="bg-[rgba(229,84,115,0.1)] py-10">

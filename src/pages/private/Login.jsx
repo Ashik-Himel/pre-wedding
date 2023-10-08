@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import googleIcon from "../../assets/images/google.png";
@@ -18,6 +18,7 @@ const Login = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [BtnActive, setBtnActive] = useState(false);
   const [eyeShow, setEyeShow] = useState(false);
+  const {pathname} = useLocation();
 
   const handlePassOnChange = (e) => {
     const password = e.target.value;
@@ -127,7 +128,7 @@ const Login = () => {
               </button>
             </form>
             <p className="font-medium">
-              Don&apos;t have an account? <Link to='/register' className="text-primary">Register</Link>
+              Don&apos;t have an account? <Link to='/register' className="text-primary" state={pathname} onClick={() => scrollTo(0, 0)}>Register</Link>
             </p>
             <div className="flex justify-center items-center gap-4 my-4">
               <span className="flex-1 h-[1px] bg-text-color"></span>

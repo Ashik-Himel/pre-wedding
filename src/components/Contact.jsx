@@ -1,13 +1,7 @@
 import toast from "react-hot-toast";
 import contactImg from "../assets/images/contact.png";
-import 'aos/dist/aos.css';
-import { useContext } from "react";
-import { UserContext } from "../ContextProvider";
 
 const Contact = () => {
-  const {aosSettings} = useContext(UserContext);
-  aosSettings();
-
   const handleSubmit = e => {
     e.preventDefault();
     e.target.reset();

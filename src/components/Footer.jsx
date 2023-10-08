@@ -40,9 +40,9 @@ const Footer = () => {
               <div>
                 <h2 className="text-2xl font-medium mb-2">Pages</h2>
                 <nav className="flex flex-col gap-2">
-                  <Link to='/'>Home</Link>
-                  <Link to='/wedding-gallery'>Wedding Gallery</Link>
-                  <Link to='/vendor-directory'>Vendor Directory</Link>
+                  <Link to='/' onClick={() => scrollTo(0, 0)}>Home</Link>
+                  <Link to='/wedding-gallery' onClick={() => scrollTo(0, 0)}>Wedding Gallery</Link>
+                  <Link to='/vendor-directory' onClick={() => scrollTo(0, 0)}>Vendor Directory</Link>
                 </nav>
               </div>
             </div>

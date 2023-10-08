@@ -1,14 +1,8 @@
 import PropTypes from "prop-types";
 import {format} from "date-fns";
-import 'aos/dist/aos.css';
-import { useContext } from "react";
-import { UserContext } from "../ContextProvider";
 
 const EventCard = ({event}) => {
   const {thumbnail, title, location, date, budget} = event;
-
-  const {aosSettings} = useContext(UserContext);
-  aosSettings();
 
   return (
     <div className="border-2 border-primary rounded [box-shadow:2px_2px_30px_rgba(229,84,115,0.3)]" data-aos="fade-up">

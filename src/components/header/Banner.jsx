@@ -1,11 +1,4 @@
-import 'aos/dist/aos.css';
-import { useContext } from "react";
-import { UserContext } from '../../ContextProvider';
-
 const Banner = () => {
-  const {aosSettings} = useContext(UserContext);
-  aosSettings();
-
   return (
     <section className="py-10 md:py-20 lg:py-40 text-center">
       <div className="container" data-aos="fade-up">

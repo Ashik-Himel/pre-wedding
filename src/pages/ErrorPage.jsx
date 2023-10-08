@@ -10,7 +10,7 @@ const ErrorPage = () => {
           <h2 className="text-3xl font-medium mb-4
           ">404 - Page Not Found !!!</h2>
           <p className="text-para-color mb-6 max-w-[650px]">The page you are looking for is not available. Please return to our homepage and let&apos;s get you back on the right path.</p>
-          <Link to='/' className="btn btn-primary">Return Home</Link>
+          <Link to='/' className="btn btn-primary" onClick={() => scrollTo(0, 0)}>Return Home</Link>
         </div>
       </div>
     </main>

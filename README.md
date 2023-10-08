@@ -7,4 +7,4 @@
 * Dynamic route based on user's click in services section's card.
 * User authentication with email and password.
 * User authentication with google account.
-* Private routes that cannot be access without login.
+* Private routes added. They cannot be accessed without login.

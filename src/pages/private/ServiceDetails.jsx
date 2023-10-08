@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
-  const services = useLoaderData();
   const {id} = useParams();
   const [service, setService] = useState({});
-
   useEffect(() => {
-    const data = services.find(item => item.id == id)
-    setService(data)
-  }, [id, services]);
-  console.log(service);
+    fetch('/data/services.json')
+    .then(res => res.json())
+    .then(data => {
+      setService(data.find(item => item.id == id));
+    })
+  }, [id]);
 
   return (
     <main className="bg-[rgba(229,84,115,0.1)] py-12 md:py-16">

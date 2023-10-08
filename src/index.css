@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    @apply scroll-smooth scroll-p-4;
-  }
-}
-
 @layer utilities {
   .btn {
     @apply text-base font-medium normal-case h-auto min-h-[40px] rounded-md;

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import googleIcon from "../../assets/images/google.png";
@@ -19,6 +19,8 @@ const Register = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [BtnActive, setBtnActive] = useState(false);
   const [eyeShow, setEyeShow] = useState(false);
+  const prevPath = useLocation().state || '';
+  const navigate = useNavigate();
 
   const handlePassOnChange = (e) => {
     const password = e.target.value;
@@ -50,6 +52,7 @@ const Register = () => {
           .then(() => {
             toast.success("Registration Successful !!!");
             console.log(userCredential.user);
+            if (prevPath && prevPath !== '/login') navigate(prevPath);
           })
           .catch((error) => {
             toast.error(error.code);
@@ -67,6 +70,7 @@ const Register = () => {
       .then((result) => {
         setUser(result.user);
         toast.success("Login Successful !!!");
+        if (prevPath && prevPath !== '/login') navigate(prevPath);
       })
       .catch((error) => {
         toast.error(error.code);
@@ -160,7 +164,7 @@ const Register = () => {
               </button>
             </form>
             <p className="font-medium">
-              Already have an account? <Link to="/login" className="text-primary">Login</Link>
+              Already have an account? <Link to="/login" className="text-primary" onClick={() => scrollTo(0, 0)}>Login</Link>
             </p>
             <div className="flex justify-center items-center gap-4 my-4">
               <span className="flex-1 h-[1px] bg-text-color"></span>
