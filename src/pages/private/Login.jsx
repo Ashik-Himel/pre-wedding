@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import googleIcon from "../../assets/images/google.png";
@@ -18,7 +18,6 @@ const Login = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [BtnActive, setBtnActive] = useState(false);
   const [eyeShow, setEyeShow] = useState(false);
-  const navigate = useNavigate();
 
   const handlePassOnChange = (e) => {
     const password = e.target.value;
@@ -46,7 +45,6 @@ const Login = () => {
       .then((userCredential) => {
         toast.success("Login Successful !!!");
         console.log(userCredential.user);
-        navigate(-1);
       })
       .catch((error) => {
         if (error.code === 'auth/invalid-login-credentials') setErrorMsg("Incorrect username or password!");
@@ -60,7 +58,6 @@ const Login = () => {
       .then((result) => {
         setUser(result.user);
         toast.success("Login Successful !!!");
-        navigate(-1);
       })
       .catch((error) => {
         toast.error(error.code);
@@ -130,10 +127,7 @@ const Login = () => {
               </button>
             </form>
             <p className="font-medium">
-              Don&apos;t have an account?{" "}
-              <Link to="/register" className="text-primary">
-                Register
-              </Link>
+              Don&apos;t have an account? <Link to='/register' className="text-primary">Register</Link>
             </p>
             <div className="flex justify-center items-center gap-4 my-4">
               <span className="flex-1 h-[1px] bg-text-color"></span>

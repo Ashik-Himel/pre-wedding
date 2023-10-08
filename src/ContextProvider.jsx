@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./firebase.config";
+import AOS from 'aos';
 
 export const UserContext = createContext(null);
 
@@ -17,10 +18,19 @@ const ContextProvider = ({children}) => {
     return () => unSubscribe();
   }, []);
 
+  const aosSettings = () => {
+    return AOS.init({
+      duration: 700,
+      offset: 150,
+      mirror: true
+    });
+  }
+
   const value = {
     user,
     setUser,
-    userLoaded
+    userLoaded,
+    aosSettings
   }
   return (
     <UserContext.Provider value={value}>

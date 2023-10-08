@@ -7,7 +7,7 @@ const PrivateRouteAlt = ({children}) => {
   const {userLoaded, user} = useContext(UserContext);
 
   return (
-    userLoaded ? !user ? children : <Navigate to='/' /> : <div className="text-center mt-12 text-primary">
+    userLoaded ? !user ? children : <Navigate to='/' /> : <div className="text-center my-12 text-primary">
       <span className="loading loading-spinner loading-lg"></span>
     </div>
   );

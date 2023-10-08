@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <Link to='/' className="text-2xl font-medium">Pre<span className="text-primary">Wedding</span></Link>
       </div>
-      <ul className="bg-white text-text-color md:bg-[transparent] md:text-white flex flex-col md:flex-row justify-center items-center gap-6 fixed -left-full top-0 bottom-0 md:static w-full max-w-[300px] md:w-auto md:max-w-none [box-shadow:10px_0px_30px_30px_rgba(0,0,0,0.3)] md:shadow-none me-8 md:me-0 transition-[left] [&_a]:text-xl md:[&_a]:text-base z-10" style={drawerShow ? {left: 0} : {}}>
+      <ul className="bg-white text-text-color md:bg-[transparent] md:text-white flex flex-col md:flex-row justify-center items-center gap-6 fixed -left-full top-0 bottom-0 md:static w-full max-w-[300px] md:w-auto md:max-w-none [box-shadow:10px_0px_30px_30px_rgba(0,0,0,0.3)] md:shadow-none me-8 md:me-0 transition-[left] [&_a]:text-xl md:[&_a]:text-base z-20" style={drawerShow ? {left: 0} : {}}>
         <FaCircleXmark className="md:hidden text-3xl text-primary absolute right-6 top-6 cursor-pointer" onClick={() => setDrawerShow(false)} />
         <li>
           <NavLink to='/' className={({isActive}) => isActive ? 'text-primary font-semibold border-b-2 border-primary' : ''} onClick={() => setDrawerShow(false)}>Home</NavLink>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <p className="font-medium hidden lg:block">{user?.displayName?.split(' ')[0]}</p>
           </div>
           {
-            profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md text-center w-[300px] absolute top-[calc(100%+15px)] right-0">
+            profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md text-center w-[300px] absolute top-[calc(100%+15px)] right-0 z-10 shadow-2xl">
               <span className="block w-4 h-4 bg-white rotate-45 absolute -top-2 right-3 lg:right-2"></span>
               <img src={user?.photoURL} alt="User's Photo" className="w-14 mx-auto rounded-full mb-2" />
               <p className="text-[18px] font-medium">{user?.displayName}</p>
