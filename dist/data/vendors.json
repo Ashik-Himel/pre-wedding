@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "brand": "Memory Click",
+    "category": "Photographers",
+    "image": "https://memoryclick.net/wp-content/uploads/2019/09/71724731_2445623322423909_7559988300409208832_n.png",
+    "phone": "+8801984766572",
+    "portfolio": "https://memoryclick.net/"
+  },
+  {
+    "id": 2,
+    "brand": "JMC Florist",
+    "category": "Florists",
+    "image": "https://jmcflorist.com/wp-content/uploads/2018/04/06152532/Florist-1.png",
+    "phone": "+8801729265700",
+    "portfolio": "https://jmcflorist.com"
+  },
+  {
+    "id": 3,
+    "brand": "Alpha Catering",
+    "category": "Caterers",
+    "image": "https://alphacateringservices.com/wp-content/uploads/2020/07/alpha-catering-logo-optimized.png",
+    "phone": "+8801755664455",
+    "portfolio": "https://alphacateringservices.com"
+  },
+  {
+    "id": 4,
+    "brand": "Ayojok",
+    "category": "Venues",
+    "image": "https://www.ayojok.com/img/logo_final.png",
+    "phone": "+8801959555666",
+    "portfolio": "https://www.ayojok.com/vendors/venue"
+  },
+  {
+    "id": 5,
+    "brand": "Fancy's Cake",
+    "category": "Cake Designers",
+    "image": "http://www.fancyscake.com/wp-content/uploads/2017/11/350x206-update1.png",
+    "phone": "+8801912970056",
+    "portfolio": "http://www.fancyscake.com"
+  },
+  {
+    "id": 6,
+    "brand": "Lavisho",
+    "category": "Bridal Dress Shops",
+    "image": "https://qks270.a2cdn1.secureserver.net/wp-content/themes/lavisho/assets/images/logo.png",
+    "phone": "+8801902902902",
+    "portfolio": "https://lavisho.com.bd"
+  },
+  {
+    "id": 7,
+    "brand": "eDriver",
+    "category": "Transportation Services",
+    "image": "https://www.edriver.com.bd/public/uploads/logo/edriver11.png",
+    "phone": "+8801999991044",
+    "portfolio": "https://www.edriver.com.bd/"
+  },
+  {
+    "id": 8,
+    "brand": "Amin Jewelers",
+    "category": "Jewelers",
+    "image": "https://www.aminjewellers.com/images/logo_amin2.png",
+    "phone": "+8801789173194",
+    "portfolio": "https://www.aminjewellers.com/"
+  }
+]

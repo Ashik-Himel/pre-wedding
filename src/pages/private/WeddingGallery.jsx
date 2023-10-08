@@ -44,7 +44,7 @@ const columns = () => {
 
 const WeddingGallery = () => {
   return (
-    <main className="my-10 md:my-16">
+    <main className="my-10">
       <Helmet>
         <title>Wedding Gallery - PreWedding</title>
       </Helmet>

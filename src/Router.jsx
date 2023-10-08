@@ -31,7 +31,8 @@ export const router = createBrowserRouter([
       },
       {
         path: '/vendor-directory',
-        element: <PrivateRoute><VendorDirectory /></PrivateRoute>
+        element: <PrivateRoute><VendorDirectory /></PrivateRoute>,
+        loader: () => fetch('/data/vendors.json')
       },
       {
         path: '/login',
