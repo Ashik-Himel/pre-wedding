@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       {
-        pathname === '/login' || pathname === '/register' ? "" : <footer className="bg-[#111010] text-white mt-8">
+        pathname === '/login' || pathname === '/register' ? "" : <footer className="bg-[#111010] text-white">
           <div className="container">
             {/* Main Footer */}
             <div className="py-12 flex flex-col sm:flex-row gap-8 justify-between [&>*]:flex-1">

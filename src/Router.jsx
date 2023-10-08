@@ -22,7 +22,8 @@ export const router = createBrowserRouter([
       },
       {
         path: '/service-details/:id',
-        element: <PrivateRoute><ServiceDetails /></PrivateRoute>
+        element: <PrivateRoute><ServiceDetails /></PrivateRoute>,
+        loader: () => fetch('/data/services.json')
       },
       {
         path: '/wedding-gallery',

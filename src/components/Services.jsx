@@ -10,7 +10,7 @@ const Services = () => {
   }, [])
 
   return (
-    <section className="mt-12 bg-[rgba(229,84,115,0.1)] py-8" id="services">
+    <section className="mt-10 md:mt-16 bg-[rgba(229,84,115,0.1)] py-12" id="services">
       <div className="container">
         <h2 className="text-center text-3xl font-semibold mb-4">Our <span className="text-primary">Services</span></h2>
 

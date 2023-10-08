@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
           {
             profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md text-center w-[300px] absolute top-[calc(100%+15px)] right-0">
-              <span className="block w-4 h-4 bg-white rotate-45 absolute -top-2 right-3 lg:right-[135px]"></span>
+              <span className="block w-4 h-4 bg-white rotate-45 absolute -top-2 right-3 lg:right-2"></span>
               <img src={user?.photoURL} alt="User's Photo" className="w-14 mx-auto rounded-full mb-2" />
               <p className="text-[18px] font-medium">{user?.displayName}</p>
               <p className="text-para-color mb-4">{user?.email}</p>

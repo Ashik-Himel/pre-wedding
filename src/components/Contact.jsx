@@ -1,16 +1,23 @@
+import toast from "react-hot-toast";
 import contactImg from "../assets/images/contact.png";
 
 const Contact = () => {
+  const handleSubmit = e => {
+    e.preventDefault();
+    e.target.reset();
+    toast.success("Message Sent !!!");
+  }
+
   return (
-    <section className="mt-12">
+    <section className="mt-10 md:mt-16">
       <div className="container">
         <h2 className="text-center text-3xl font-semibold mb-4"><span className="text-primary">Contact</span> Us</h2>
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 [&>*]:w-full [&>*]:md:flex-1">
+        <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-8 [&>*]:w-full [&>*]:md:flex-1">
           <div>
             <img src={contactImg} alt="Contact Image" />
           </div>
           <div>
-            <form className="[&>*]:block max-w-[500px]">
+            <form className="[&>*]:block max-w-[500px]" onSubmit={handleSubmit}>
               <label htmlFor="name" className="font-medium mb-2">Name</label>
               <input className="input bg-[rgba(255,141,166,0.1)] mb-4 w-full" type="text" name="name" id="name" placeholder="Enter your name" required />
 

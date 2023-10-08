@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 
 const Home = () => {
   return (
-    <main>
+    <main className="mb-12">
       <Helmet>
         <title>PreWedding - Your Wedding Planner</title>
       </Helmet>
