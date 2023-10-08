@@ -20,9 +20,7 @@ const ContextProvider = ({children}) => {
 
   const aosSettings = () => {
     return AOS.init({
-      duration: 700,
-      offset: 150,
-      mirror: true
+      duration: 700
     });
   }
 
