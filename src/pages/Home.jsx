@@ -9,8 +9,7 @@ import 'aos/dist/aos.css';
 const Home = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700,
-      mirror: true
+      duration: 700
     });
   }, [])
 
