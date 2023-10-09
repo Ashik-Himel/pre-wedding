@@ -48,17 +48,18 @@ const Navbar = () => {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setProfileShow(!profileShow)}>
             <img src={user?.photoURL} alt="User's Photo" className="w-10 rounded-full" />
             <p className="font-medium hidden lg:block">{user?.displayName?.split(' ')[0]}</p>
+            <button className="btn btn-warning text-black hidden xl:inline-flex" onClick={handleSignOut}>Logout</button>
           </div>
           {
-            profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md text-center w-[320px] absolute top-[calc(100%+15px)] right-0 z-10 shadow-2xl">
-              <span className="block w-4 h-4 bg-white rotate-45 absolute -top-2 right-3 lg:right-2"></span>
+            profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md rounded-tr-none text-center w-[310px] absolute top-[calc(100%+15px)] right-0 z-10 shadow-2xl">
+              <span className="block w-4 h-4 bg-white rotate-45 absolute -top-2 right-[3px]"></span>
               <img src={user?.photoURL} alt="User's Photo" className="w-14 mx-auto rounded-full mb-2" />
               <p className="text-[18px] font-medium">{user?.displayName}</p>
               <p className="text-para-color mb-4">{user?.email}</p>
               <button className="btn btn-warning text-black" onClick={handleSignOut}>Logout</button>
             </div> : ''
           }
-        </div> : <div className="px-3">
+        </div> : <div className="px-3 text-center">
           <span className="loading loading-spinner loading-md"></span>
         </div>
       }
