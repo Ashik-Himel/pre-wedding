@@ -48,7 +48,6 @@ const Navbar = () => {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => setProfileShow(!profileShow)}>
             <img src={user?.photoURL} alt="User's Photo" className="w-10 rounded-full" />
             <p className="font-medium hidden lg:block">{user?.displayName?.split(' ')[0]}</p>
-            <button className="btn btn-warning text-black hidden xl:inline-flex" onClick={handleSignOut}>Logout</button>
           </div>
           {
             profileShow ? <div className="bg-white text-text-color px-6 py-4 rounded-md lg:rounded-tr-none text-center w-[310px] absolute top-[calc(100%+15px)] right-0 z-10 shadow-2xl">
